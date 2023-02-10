@@ -4,6 +4,9 @@ from flask import request
 import pandas as pd
 from postgres_database_utils import PostgresCredentials, create_connection
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class Match(Resource):

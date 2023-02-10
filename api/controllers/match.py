@@ -18,7 +18,7 @@ class Match(Resource):
         genre = request.args.get('genre')
 
         query_books = '''
-            SELECT book_title
+            SELECT title
             FROM books
             WHERE personality = %s
             AND genre = %s;
